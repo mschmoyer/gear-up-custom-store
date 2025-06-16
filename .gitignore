@@ -9,3 +9,4 @@ flask_session/*
 yarn.lock
 /.vscode
 .DS_Store
+/flask_session/

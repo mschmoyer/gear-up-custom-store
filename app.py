@@ -41,7 +41,7 @@ from database import db
 db.init_app(app)
 
 # Now import the models
-#from models import Cart, Order
+from models import Cart, Order
 
 with app.app_context():
     db.create_all()
@@ -374,25 +374,6 @@ def submit_chaotic_order():
     return jsonify({"message": "Order placed successfully!"})
 
 
-# New route to handle the new ShipStation chatbot
-@cross_origin() # allow all origins all methods.
-@app.route('/shipstation-chat', methods=['GET'])
-def shipstation_chat_route():
-    # Get the question query parameter
-    question = request.args.get('question')
-    session_id = session['session_id']
-
-    # Generate a new session ID if not provided
-    if not session_id:
-        session_id = str(uuid.uuid4())
-
-    #put the question into the data object
-    output_json = {"question": question, "session_id": session_id}
-
-    # Call out to https://supportgpt.sslocal.com/shipstation-chat to get the answer
-    response = requests.post('https://supportgpt.sslocal.com/shipstation-chat', json=output_json)
-    print(f"Response status code: {response.status_code}")
-    return response
 
 
 @app.route('/mark_all_as_shipped', methods=['POST'])
