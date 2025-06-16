@@ -1,0 +1,9 @@
+Flask
+requests
+Flask-Caching
+openai
+Flask-SQLAlchemy
+pycountry
+dicttoxml
+PyYAML
+flask_cors

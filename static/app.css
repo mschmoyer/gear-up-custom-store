@@ -1,0 +1,72 @@
+.thin-header {
+    padding: 0.5rem 0;
+}
+
+.bg-primary {
+    background-color: #1A1F71 !important;
+}
+
+.btn-primary {
+    background-color: #7CBB37;
+    border-color: #7CBB37;
+}
+
+.chat-container {
+    background-color: whitesmoke;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+    background-color: #5a9228;
+    border-color: #5a9228;
+}
+
+.searchBar {
+    margin-top: 40px;
+}
+
+.productList {
+    margin-top: 40px;
+}
+
+.shipping-form-submit {
+    margin-top: 20px;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn ease 1s forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.btn-buy {
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.3s;
+}
+
+.btn-buy:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s;
+}
+
+.btn-buy.clicked {
+    background-color: #007bff;
+}
+
+.btn-buy.clicked:after {
+    transform: scaleX(1);
+}

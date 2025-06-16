@@ -1,0 +1,3 @@
+0000000000000000000000000000000000000000 a0e31f1a6e6a79f07d920a413d85bf21220b2a42 Mike Schmoyer <mschmoyer@users.noreply.github.com> 1685934284 -0500	clone: from https://github.com/mschmoyer/custom_store.git
+a0e31f1a6e6a79f07d920a413d85bf21220b2a42 4d387a3a26307f9af79b873b498e2ff884375de0 Mike Schmoyer <mschmoyer@users.noreply.github.com> 1720551792 -0500	commit: Jul 2024 update. Includes
+4d387a3a26307f9af79b873b498e2ff884375de0 90893bbdb8f426911e1e61b641a478f751f26c12 Mike Schmoyer <mschmoyer@users.noreply.github.com> 1720559967 -0500	commit: Floating "order arrived" animation. Rate limiter on orders - server side.
